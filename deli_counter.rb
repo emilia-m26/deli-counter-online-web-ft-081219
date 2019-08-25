@@ -1,7 +1,7 @@
 def line(array)
   if array.length > 0
-    line_list = []
-    array.each_with_index do |name,index|
+    
+    array.each_with_index.collect do |name,index|
       line_list << ("#{index+1}. #{name}")
     end 
     puts "The line is currently: #{line_list.join(" ")}"
