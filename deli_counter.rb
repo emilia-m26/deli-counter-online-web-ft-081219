@@ -1,6 +1,6 @@
 def line(number)
   if number.length > 0 
-    puts "You are number #{number+1" in line."
+    puts "You are number #{number+1} in line."
   else
     puts "The line is currently empty."
   end
