@@ -1,3 +1,8 @@
+def line(number)
+  if number.length > 0 
+    puts 
+end
+
 
 
 
