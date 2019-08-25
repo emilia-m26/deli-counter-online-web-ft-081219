@@ -1,44 +1,14 @@
-def line(number)
-  if number.length > 0 
-    puts "You are number #{number+1} in line."
+def line(array)
+  if array.length > 0
+    line_list = []
+    array.each_with_index do |name,index|
+      line_list << ("#{index+1}. #{name}")
+    end 
+    puts "The line is currently: #{line_list.join(" ")}"
   else
     puts "The line is currently empty."
   end
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# def line(array)
-#   if array.length > 0
-#     line_list = []
-#     array.each_with_index do |name,index|
-#       line_list << ("#{index+1}. #{name}")
-#     end 
-#     puts "The line is currently: #{line_list.join(" ")}"
-#   else
-#     puts "The line is currently empty."
-#   end
-# end
 
 # def take_a_number(array,string)
 #   array << string
